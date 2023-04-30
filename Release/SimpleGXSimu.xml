@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SimpleGXSimu
+</name>
+</assembly>
+<members>
+<member name="P:SimpleGXSimu.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SimpleGXSimu.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SimpleGXSimu.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SimpleGXSimu.GXSim.BitConverterGetBytes(System.Int32,System.Byte)">
+	<summary>
+ Integer以下の数値から可変Byte配列返却
+ </summary>
+	<param name="aa">数値</param>
+	<param name="IsBig">1ならBigEndianオーダーで格納</param>
+	<returns>指定エンディアンと値によるバイト配列が返る。254であれば大きさ1, 257なら大きさ2</returns>
+</member><member name="M:SimpleGXSimu.GXSim.DevValue(System.String)">
+	<summary>
+ D700などデバイスを指定すると、(0):DevCode(-1), (1):Dev番号(-1), (2):-, (3):HEX/DEC, (4):BIT/WORD
+ </summary>
+	<param name="Str">D700 などデバイス名を指定</param>
+	<returns>(0):DevCode(-1), (1):Dev番号(-1), (2):-, (3):HEX/DEC, (4):BIT/WORD</returns>
+</member><member name="M:SimpleGXSimu.GXSim.Enum2Value(System.Type,System.String)">
+	<summary>
+ Enum中に、指定文字列と同じパラメータがあるなら対応値を返し、ないなら-1 を返す。
+ ただし, Enum は GetType(Enum) として渡す
+ </summary>
+	<param name="en">"GetType(Enum名)として Enumを渡す</param>
+	<param name="str"></param>
+	<returns>対応値Integer</returns>
+</member><member name="M:SimpleGXSimu.GXSim.DisHEX(System.Int32)">
+	<summary>
+  数値を 文字列(16進数表記）で返す
+ </summary>
+</member><member name="T:SimpleGXSimu.GXSim.DeviceCode">
+	<summary>
+  デバイスコード(GX-Simulator の場合は, 2バイトになってます。)
+ </summary>
+</member><member name="M:SimpleGXSimu.GXSim.ByteDis(System.Byte[],System.String)">
+	<summary>
+ バイト配列を指定し、指定記号で区切る一連の文字列で返す
+ </summary>
+	<param name="dat">バイト配列</param>
+	<param name="fix">区切り文字</param>
+	<returns>バイトごとに区切り、かつ8バイトごとに空白、16バイトごとに改行した文字列を返す</returns>
+</member><member name="M:SimpleGXSimu.GXSim.UShortDis(System.UInt16[],System.String)">
+	<summary>
+ UShort配列を指定し、指定記号で区切る一連の文字列で返す
+ </summary>
+	<param name="dat">UShort配列</param>
+	<param name="fix">区切り文字</param>
+	<returns>UShortごとに区切り、かつ8ワードごとに空白、16ワードごとに改行した文字列を返す</returns>
+</member><member name="P:SimpleGXSimu.GXSim.ActHostAddress">
+	<summary>
+  【通信パラメタ】ActHostAddressプロパティ(EthernetユニットのIPアドレス. 初期値192.168.1.11)
+ </summary>
+</member><member name="P:SimpleGXSimu.GXSim.ActPortNumber">
+	<summary>
+ 【通信パラメタ】ActPortNumberプロパティ(EthernetユニットのPort番号. 初期値2000)
+ </summary>
+</member><member name="P:SimpleGXSimu.GXSim.TIMEOUT">
+	<summary>
+ 【通信パラメタ】タイムアウト[msec]
+ </summary>
+</member><member name="P:SimpleGXSimu.GXSim.CPU">
+	<summary>
+ 【通信パラメタ】CPU型番
+ </summary>
+</member><member name="T:SimpleGXSimu.GXSim.enumEndian">
+	<summary>
+  ビッグエンディアンか否か
+ </summary>
+</member><member name="T:SimpleGXSimu.GXSim.enumDevIsWORD">
+	<summary>
+  デバイスがワードデバイスか否か(正なら1)
+ </summary>
+</member><member name="T:SimpleGXSimu.GXSim.enumDevIsHEX">
+	<summary>
+  デバイスが16進数表記か否か(正なら1)
+ </summary>
+</member><member name="T:SimpleGXSimu.enumCPU">
+	<summary>
+	</summary>
+</member><member name="T:SimpleGXSimu.enumGXP">
+	<summary>
+	</summary>
+</member>
+</members>
+</doc>
