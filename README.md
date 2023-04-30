@@ -17,6 +17,8 @@ use C# on GX Simulator2 without MX Component
 ## 利用方法
 
 zipをダウンロードし解凍します。DLL参照済みであるVisual Studio ソリューションファイルを VS2013-2022 で開きます。サンプルアプリを自由に変更し実行します。
+添付ソリューションは VB.NET 向けです。DLL参照の設定は、ごく一般的方法です。
+
 
 ### CSharp
 ```cs
