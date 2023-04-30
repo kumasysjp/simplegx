@@ -1,11 +1,8 @@
 # simplegx
 use C# on GX Simulator2 without MX Component
 
-# 用途
+## 用途
 趣味。業務用利用はどうかお控えください。利用によって損害は負いません。
-
-
-
 
 ## 内容物
 - SimpleGXSimu.dll (要 .NET4.5互換 Runtime.  .NET DLL)
@@ -17,6 +14,9 @@ use C# on GX Simulator2 without MX Component
 
 これら 3つの DLL すべて必要です。
 
+## 利用方法
+
+zipをダウンロードし解凍します。DLL参照済みであるVisual Studio ソリューションファイルを VS2013-2022 で開きます。サンプルアプリを自由に変更し実行します。
 
 ### CSharp
 ```cs
