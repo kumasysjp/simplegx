@@ -1,5 +1,5 @@
 # simplegx
-use C# on GX Simulator2 without MX Component
+use C# on GX Simulator2(MELSEC) without MX Component.
 
 ## 用途
 趣味。業務用利用はどうかお控えください。利用によって損害は負いません。
